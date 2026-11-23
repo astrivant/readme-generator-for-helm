@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Chart Values",
+  "type": "object",
+  "properties": {
+    "replicas": {
+      "type": "integer",
+      "description": "Requested parallel instances.",
+      "default": 2,
+      "minimum": 1,
+      "maximum": 8
+    },
+    "labels": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "string",
+        "maxLength": 32
+      },
+      "description": "Additional string-valued labels.",
+      "default": {}
+    },
+    "ports": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 65535
+      },
+      "description": "Explicitly bounded service ports.",
+      "default": [],
+      "maxItems": 4
+    }
+  },
+  "additionalProperties": false,
+  "default": {
+    "replicas": 2,
+    "labels": {},
+    "ports": []
+  },
+  "required": [
+    "replicas",
+    "labels",
+    "ports"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "organization": "Astrivant",
+  "foreground": "#001736",
+  "secondary": "#56616C",
+  "background": "#FFFFFF",
+  "series": [
+    "#001736",
+    "#007E54",
+    "#728CB0",
+    "#B76A62",
+    "#CCA864",
+    "#409e7f",
+    "#c98f89"
+  ],
+  "source": "Reviewed Astrivant marketing brand palette",
+  "source_sha256": "33181366fb1157a894f43b772b2392a03834afa0a7df3b8d80ea9d40eaab4e27",
+  "derived_colors": "Unchanged primary/supporting colors; uncertainty bands use 13 percent opacity",
+  "derivation": {
+    "base_sha256": "82df58fc3d9f9f153bc302d08f2ae825d63057d38af66af4547b41b18b90a5f0",
+    "extra_colors": "Append a 25 percent white sRGB-channel mixture of base series 2 and 4."
+  }
+}

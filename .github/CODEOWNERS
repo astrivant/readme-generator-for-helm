@@ -1,0 +1,15 @@
+# Scoped maintenance for the structural-schema extension; upstream ownership is unchanged.
+/lib/schema.js @emmeowzing
+/index.js @emmeowzing
+/bin/index.js @emmeowzing
+/lib/builder.js @emmeowzing
+/config.json @emmeowzing
+/package.json @emmeowzing
+/package-lock.json @emmeowzing
+/tests/structural-schema.test.js @emmeowzing
+/docs/structural-schemas.md @emmeowzing
+/Brewfile @emmeowzing
+
+/tests/fixtures/ @emmeowzing
+
+/.github/review-evidence/ @emmeowzing

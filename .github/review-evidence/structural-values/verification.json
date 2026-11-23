@@ -1,0 +1,118 @@
+{
+  "source": {
+    "repository": "astrivant/readme-generator-for-helm",
+    "base": "eed4a90e87521a4d576ad1d23e2317cce9807d60",
+    "head": "38b75cf776c3965a9fb95a49f715826e0c9d62d3",
+    "excluded_root": ".github/review-evidence/"
+  },
+  "changed_files": 16,
+  "file_pages": 2,
+  "files": [
+    {
+      "before": "lib/schema.js",
+      "after": "lib/schema.js",
+      "added": 165,
+      "deleted": 0
+    },
+    {
+      "before": "package-lock.json",
+      "after": "package-lock.json",
+      "added": 84,
+      "deleted": 13
+    },
+    {
+      "before": "tests/structural-schema.test.js",
+      "after": "tests/structural-schema.test.js",
+      "added": 87,
+      "deleted": 0
+    },
+    {
+      "before": "docs/structural-schemas.md",
+      "after": "docs/structural-schemas.md",
+      "added": 58,
+      "deleted": 0
+    },
+    {
+      "before": "tests/fixtures/structural-chart/values.schema.json",
+      "after": "tests/fixtures/structural-chart/values.schema.json",
+      "added": 46,
+      "deleted": 0
+    },
+    {
+      "before": "index.js",
+      "after": "index.js",
+      "added": 21,
+      "deleted": 2
+    },
+    {
+      "before": ".github/CODEOWNERS",
+      "after": ".github/CODEOWNERS",
+      "added": 15,
+      "deleted": 0
+    },
+    {
+      "before": "tests/fixtures/structural-chart/templates/configmap.yaml",
+      "after": "tests/fixtures/structural-chart/templates/configmap.yaml",
+      "added": 8,
+      "deleted": 0
+    },
+    {
+      "before": "tests/fixtures/structural-chart/values.constraints.json",
+      "after": "tests/fixtures/structural-chart/values.constraints.json",
+      "added": 8,
+      "deleted": 0
+    },
+    {
+      "before": "bin/index.js",
+      "after": "bin/index.js",
+      "added": 7,
+      "deleted": 0
+    },
+    {
+      "before": "tests/fixtures/structural-chart/values.yaml",
+      "after": "tests/fixtures/structural-chart/values.yaml",
+      "added": 7,
+      "deleted": 0
+    },
+    {
+      "before": "lib/builder.js",
+      "after": "lib/builder.js",
+      "added": 5,
+      "deleted": 0
+    },
+    {
+      "before": "tests/fixtures/structural-chart/Chart.yaml",
+      "after": "tests/fixtures/structural-chart/Chart.yaml",
+      "added": 4,
+      "deleted": 0
+    },
+    {
+      "before": "Brewfile",
+      "after": "Brewfile",
+      "added": 3,
+      "deleted": 0
+    },
+    {
+      "before": "config.json",
+      "after": "config.json",
+      "added": 3,
+      "deleted": 0
+    },
+    {
+      "before": "package.json",
+      "after": "package.json",
+      "added": 1,
+      "deleted": 0
+    }
+  ],
+  "artifacts": {
+    "languages.png": "5dd90f14ffb6698bd3722e89ba9811e37d2bd4893bd26e56aa57b6e8b70f4139",
+    "directory.png": "efae40aaf047f213ffa55e90d40c5e6a742f03c78738b868c624b14a14f1cca2",
+    "files-full-001.png": "e0209cf7d114bced02cbaec5612408771677b5c2c6d32120844724675ba20931",
+    "files-full-002.png": "010bf8224725961d9b4dacfa335fb193b2531e572aad33f65f5e4659ea72f677",
+    "intent.png": "341f80bfffe6dd60d9f6cf0c7caab4fb1faa25288c01bc0c43e3f14bb8687def"
+  },
+  "palette_sha256": "d51ee253badfe7a5683af852a69973690c686e77774fcf7e4b76611db62dfdf1",
+  "intent": "Canonical source-bound intent unavailable. No purpose inferred from touched paths.",
+  "inspection": "Mechanical generation only; no visual inspection claimed."
+}

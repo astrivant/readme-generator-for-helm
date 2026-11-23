@@ -1,0 +1,8 @@
+{
+  "required": ["replicas", "labels", "ports"],
+  "properties": {
+    "replicas": {"minimum": 1, "maximum": 8},
+    "labels": {"additionalProperties": {"type": "string", "maxLength": 32}},
+    "ports": {"maxItems": 4, "items": {"type": "integer", "minimum": 1, "maximum": 65535}}
+  }
+}

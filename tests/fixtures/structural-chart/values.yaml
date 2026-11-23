@@ -1,0 +1,7 @@
+## @section Synthetic rendering controls
+## @param replicas [integer] Requested parallel instances.
+replicas: 2
+## @param labels [object] Additional string-valued labels.
+labels: {}
+## @param ports [array] Explicitly bounded service ports.
+ports: []
