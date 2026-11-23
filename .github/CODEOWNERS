@@ -11,3 +11,5 @@
 /Brewfile @emmeowzing
 
 /tests/fixtures/ @emmeowzing
+
+/.github/review-evidence/ @emmeowzing
