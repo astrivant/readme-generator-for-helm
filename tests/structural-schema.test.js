@@ -74,3 +74,14 @@ test('structural CLI generation validates before replacing its schema destinatio
     fs.rmSync(folder, { recursive: true });
   }
 });
+
+
+test('preserves valid constraint-only conditional branches from authored schemas', () => {
+  const overlay = { properties: { mode: { enum: ['local', 'remote'] } },
+    if: { properties: { mode: { const: 'remote' } } },
+    then: { properties: { endpoint: { minLength: 1 } } } };
+  const result = valuesSchema({ mode: 'local', endpoint: '' }, [], overlay);
+  expect(validate(result, { mode: 'local', endpoint: '' })).toBe(true);
+  expect(validate(result, { mode: 'remote', endpoint: '' })).toBe(false);
+  expect(() => valuesSchema({ date: new Date() })).toThrow('non-JSON');
+});

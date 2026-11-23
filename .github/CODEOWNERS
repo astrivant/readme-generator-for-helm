@@ -9,3 +9,5 @@
 /tests/structural-schema.test.js @emmeowzing
 /docs/structural-schemas.md @emmeowzing
 /Brewfile @emmeowzing
+
+/tests/fixtures/ @emmeowzing

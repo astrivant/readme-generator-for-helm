@@ -43,3 +43,16 @@ resources. Hypothesis Helm supplies those separate tests.
 
 Run `npm ci`, `npm test -- --runInBand` and `npm run lint` with the declared Node 24 runtime.
 The CLI emits INFO operational logs on stderr; `--debug` enables bounded diagnostics.
+
+The committed synthetic chart exercises the output through the native consumer:
+
+```console
+node bin/index.js --values tests/fixtures/structural-chart/values.yaml \
+  --schema tests/fixtures/structural-chart/values.schema.json --schema-dialect draft7 \
+  --schema-overlay tests/fixtures/structural-chart/values.constraints.json
+hypothesis-helm test tests/fixtures/structural-chart --whole-chart --max-depth 0 \
+  --max-examples 8 --seed 20261123 --jobs 1 --strict
+```
+
+Install Helm and Hypothesis Helm before this integration check. The fixture uses
+only a native ConfigMap; it requires neither a cluster nor registry credentials.
