@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "hosts": [
+    {
+      "id": "github",
+      "provider": "github",
+      "url": "https://github.com"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "project",
+      "kind": "project",
+      "label": "Helm README generator",
+      "host": "github",
+      "path": "astrivant/readme-generator-for-helm",
+      "url": "https://github.com/astrivant/readme-generator-for-helm"
+    },
+    {
+      "id": "main",
+      "kind": "branch",
+      "label": "main",
+      "parent": "project",
+      "host": "github",
+      "revision": "eed4a90e87521a4d576ad1d23e2317cce9807d60",
+      "url": "https://github.com/astrivant/readme-generator-for-helm/tree/main"
+    },
+    {
+      "id": "feature",
+      "kind": "branch",
+      "label": "fix/structural-values-schemas",
+      "parent": "project",
+      "host": "github",
+      "revision": "38b75cf776c3965a9fb95a49f715826e0c9d62d3",
+      "url": "https://github.com/astrivant/readme-generator-for-helm/tree/fix/structural-values-schemas",
+      "work": "review"
+    },
+    {
+      "id": "review",
+      "kind": "review",
+      "label": "Structural Helm values schemas",
+      "parent": "project",
+      "host": "github",
+      "number": 1,
+      "revision": "38b75cf776c3965a9fb95a49f715826e0c9d62d3",
+      "state": "open",
+      "draft": false,
+      "url": "https://github.com/astrivant/readme-generator-for-helm/pull/1",
+      "work": "review"
+    }
+  ],
+  "links": [
+    {
+      "id": "review-source",
+      "source": "review",
+      "target": "feature",
+      "kind": "correlates",
+      "evidence": "https://github.com/astrivant/readme-generator-for-helm/pull/1",
+      "source_revision": "38b75cf776c3965a9fb95a49f715826e0c9d62d3",
+      "target_revision": "38b75cf776c3965a9fb95a49f715826e0c9d62d3"
+    },
+    {
+      "id": "branch-base",
+      "source": "feature",
+      "target": "main",
+      "kind": "based_on",
+      "evidence": "https://github.com/astrivant/readme-generator-for-helm/compare/eed4a90e87521a4d576ad1d23e2317cce9807d60...38b75cf776c3965a9fb95a49f715826e0c9d62d3",
+      "source_revision": "38b75cf776c3965a9fb95a49f715826e0c9d62d3",
+      "target_revision": "eed4a90e87521a4d576ad1d23e2317cce9807d60"
+    }
+  ]
+}
